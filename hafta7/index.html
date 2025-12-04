@@ -3,23 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lab Görevi 1 - Ortalanmış Animasyonlar</title>
+    <title>Animasyon</title>
     <style>
-        /* SAYFA DÜZENİ (ORTALAMA İŞLEMİ) */
+        
         body {
             margin: 0;
-            height: 100vh; /* Tüm ekran yüksekliğini kapla */
-            display: flex; /* Esnek kutu modeli */
-            justify-content: center; /* Yatayda ortala */
-            align-items: center; /* Dikeyde ortala */
-            /* Arka plan rengi varsayılan (beyaz) bırakıldı */
+            height: 100vh; 
+            display: flex;
+            justify-content: center; 
+            align-items: center;
         }
 
-        /* Tüm kutular için genel ortak özellikler */
         div {
             width: 100px;
             height: 100px;
-            margin: 15px; /* Kutular arası boşluk */
+            margin: 15px; 
             text-align: center;
             line-height: 100px; 
             color: white;
@@ -28,7 +26,6 @@
             border-radius: 10px;
         }
 
-        /* --- 1. Yukarı Aşağı Gidip Gelen --- */
         .kutu1 {
             background-color: #e74c3c;
             position: relative;
@@ -43,7 +40,6 @@
             to { top: 20px; }
         }
 
-        /* --- 2. Büyüyüp Küçülen ve Rengi Değişen --- */
         .kutu2 {
             background-color: #3498db;
             animation-name: buyuRenklendir;
@@ -63,7 +59,6 @@
             }
         }
 
-        /* --- 3. Gitgide Transparan Değeri Artan ve Azalan --- */
         .kutu3 {
             background-color: #2ecc71;
             animation-name: transparanlik;
@@ -77,7 +72,6 @@
             to { opacity: 0.2; }
         }
 
-        /* --- 4. Sağa Sola Giden Gelen --- */
         .kutu4 {
             background-color: #f1c40f;
             color: black;
@@ -93,9 +87,8 @@
             to { left: 20px; }
         }
 
-        /* --- 5. Dönen --- */
         .kutu5 {
-            background-color: #34495e; /* Slayttaki örneğe uygun koyu gri ton */
+            background-color: #34495e; 
             animation-name: donme;
             animation-duration: 3s;
             animation-iteration-count: infinite;
