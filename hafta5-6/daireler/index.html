@@ -1,1 +1,64 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daireler</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
 
+        .container {
+            position: relative;
+            width: 300px;
+            height: 280px;
+        }
+
+        .daire {
+            position: absolute;
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            opacity: 0.85;
+            mix-blend-mode: multiply; 
+        }
+
+        .kirmizi {
+            background-color: #ff4d4d;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1;
+        }
+
+        .mavi {
+            background-color: #4d4dff;
+            bottom: 0;
+            left: 0;
+            z-index: 2;
+        }
+
+        .sari {
+            background-color: #ffd700;
+            bottom: 0;
+            right: 0;
+            z-index: 3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="daire kirmizi"></div>
+        <div class="daire mavi"></div>
+        <div class="daire sari"></div>
+    </div>
+
+</body>
+</html>
