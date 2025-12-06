@@ -1,0 +1,28 @@
+body {
+  font-family: Arial;
+  background-color: #f9f9f9;
+}
+h2 {
+  text-align: center;
+  color: #333;
+}
+table {
+  border-collapse: collapse;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+}
+th, td {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+th {
+  background-color: #ff9f43;
+  color: white;
+}
+td:first-child {
+  background-color: #f1f1f1;
+  font-weight: bold;
+}
+.orange { background-color: #feca57; }
+.blue { background-color: #48dbfb; }
